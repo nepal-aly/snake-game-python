@@ -1,10 +1,10 @@
-# Classic Snake Game 🐍
+# Classic Snake Game
 
 A modernized Arcade Snake game developed in Python using the `turtle` graphics library and Object-Oriented Programming (OOP) principles.
 
 ---
 
-## 🏗 Project Architecture
+## Project Architecture
 
 ```text
 snake-game-python/
@@ -14,19 +14,24 @@ snake-game-python/
 │-- scoreboard.py    # Scoreboard class (UI & Highscore tracking)
 │-- highscore.txt    # Persistent data store for high score
 └── README.md        # Project documentation
+```
 
 ---
-```
-## 🎮 Game Controls
+
+## Game Controls
 
 - **Up Arrow:** Move Snake Up
 - **Down Arrow:** Move Snake Down
 - **Left Arrow:** Move Snake Left
 - **Right Arrow:** Move Snake Right
 
+The snake can't turn straight back into itself (e.g. pressing Down while moving Up is ignored).
+
+The game ends when the snake hits the wall or its own tail.
+
 ---
 
-## 🌟 Key Features
+## Key Features
 
 - **OOP Architecture:** Clean separation of concerns across multiple modules (`Snake`, `Food`, `Scoreboard`).
 - **Data Persistence:** Automatically tracks, reads, and overwrites the highest score locally in `highscore.txt`.
@@ -35,11 +40,13 @@ snake-game-python/
 
 ---
 
-## 🛠 Setup & Execution
+## Setup & Execution
 
 1. **Clone the repository:**
-   git clone [https://github.com/nepal-aly/snake-game-python.git](https://github.com/nepal-aly/snake-game-python.git)
-   cd snake-game-python
+   `git clone https://github.com/nepal-aly/snake-game-python.git`
 
-2. **Run the application:**
-   python main.py
+2. **Navigate to directory:**
+   `cd snake-game-python`
+
+3. **Run the application:**
+   `python main.py`

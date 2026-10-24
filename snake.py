@@ -23,12 +23,16 @@ class Snake:
         for i in range(len(self.snakes)-1):
             self.snakes[i].goto(self.snakes[i+1].pos())
         self.head.forward(20)
-    def up (self):
-        self.head.setheading(90)
-    def down (self):
-        self.head.setheading(270)
+    def up(self):
+        if self.head.heading() != 270:
+            self.head.setheading(90)
+    def down(self):
+        if self.head.heading() != 90:
+            self.head.setheading(270)
     def right(self):
-        self.head.setheading(0)
+        if self.head.heading() != 180:
+            self.head.setheading(0)
     def left(self):
-        self.head.setheading(180)
+        if self.head.heading() != 0:
+            self.head.setheading(180)
         
